@@ -1,1 +1,23 @@
+html {
+        font-size: 12px;
+    }
 
+body {
+        background-color:#FCFBE8;
+        color: #2677d3;
+        font-family:'Times New Roman', 'Times New Roman', Times, serif;
+        
+      
+}
+
+a:link {
+        color: #2677d3;
+}
+
+a:visited  {
+        color: blueviolet;
+}
+
+a:hover, a:active {
+        color:orange;
+}
