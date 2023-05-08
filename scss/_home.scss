@@ -1,7 +1,7 @@
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/2.jpg);
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/3.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -11,21 +11,42 @@
   width: 200px;
 }
 
-.nav {
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
+.text-box {
+  width: 90%;
+  color: $secondary-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
 
-  &--links {
-    flex: 1;
-    text-align: right;
+.home__name {
+  font-size: 62px;
 
-    &__item {
-      list-style: none;
-      display: inline-block;
-      padding: 8px 12px;
-      position: relative;
-    }
+  &--exp {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: $secondary-color;
   }
 }
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $primary-color;
+    background: $primary-color;
+    @include transition-ease;
+  }
+}
+
+
