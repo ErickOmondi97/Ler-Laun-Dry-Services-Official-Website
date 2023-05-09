@@ -15,7 +15,7 @@
 }
 
 .logo-home {
-  width: 200px;
+  width: 150px;
 }
 
 .text-box {
@@ -89,6 +89,10 @@
   width: 100%;
 }
 
+nav .fa {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .home__name {
     font-size: 20px;
@@ -102,9 +106,20 @@
     height: 100vh;
     width: 200px;
     top: 0;
-    right: 0;
+    right: -200px;
     text-align: left;
     z-index: 2;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .fa {
+    display: block;
+    color: #fcfbe8;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav--links__items {
+    padding: 30px;
   }
 }
 body {
