@@ -5,33 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width =device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="icon" href="img/logo.png" type="xicon/image">
+  <link rel="icon" href="img/icon.png" type="xicon/image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesone/4.7.0/css/font-awesome.min.css"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesone/4.7.0/css/font-awesome.min.css">
   <title>Ler Laun-Dry Services</title>
 </head>
 <body>
   <section class="header">
     <nav class="nav">
       <a href="index.html" class=""><img src="img/logo.png" alt="logo" class="logo-home"></a>
-      <div class="nav--links">
-        <ul>
-          <li class="nav--links__item active">
-            <a href="index.html" class="menu-nav__link">HOME</a>
-          </li>
-          <li class="nav--links__item">
-            <a href="index.html" class="menu-nav__link">ABOUT</a>
-          </li>
-          <li class="nav--links__item">
-            <a href="index.html" class="menu-nav__link">SERVICES</a>
-          </li>
-          <li class="nav--links__item">
-            <a href="index.html" class="menu-nav__link">CONTACTS</a>
-          </li>
-        </ul>
-      </div>
+        <div class="nav--links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul class="nav--links__items">
+              <li class="nav--links__item active">
+                <a href="index.html" class="menu-nav__link">
+                  HOME
+                </a>
+              </li>
+              <li class="nav--links__item">
+                <a href="index.html" class="menu-nav__link">
+                  ABOUT
+                </a>
+              </li>
+              <li class="nav--links__item">
+                <a href="index.html" class="menu-nav__link">
+                  SERVICES
+                </a>
+              </li>
+              <li class="nav--links__item">
+                <a href="index.html" class="menu-nav__link">
+                  CONTACTS
+                </a>
+              </li>
+            </ul>
+        </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
     <div class="text-box">
@@ -39,13 +49,25 @@
         Kitengela's Best Laundry Services
       </h1>
       <p class="home__name--exp">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
       </p>
       <a href="" class="hero-btn">Visit Us Today</a>
     </div>
   </section>
-
-
   
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
 </body>
+
 </html>
