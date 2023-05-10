@@ -1,18 +1,19 @@
-@import 'config';
-@import 'home';
-@import 'menu';
-@import 'respo';
-
+@import './config';
+@import './home';
+@import './menu';
+@import './respo';
+@import './services';
+@import './products';
 
 body {
-  background: $primary-color;
-  color: #2b8cc4;
+  background: $secondary-color;
+  color: $primary-color;
   height: 100vh;
   line-height: 1;
 }
 
 a {
-  color: #fff;
+  color: $secondary-color;
   text-decoration: none;
   font-size: 13px;
 }

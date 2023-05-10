@@ -1,0 +1,18 @@
+.products {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+
+  &__examples-exp--col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+    &__img {
+      width: 100%;
+    }
+  }
+}
