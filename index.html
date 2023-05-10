@@ -9,52 +9,103 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesone/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/main.js"></script>
   <title>Ler Laun-Dry Services</title>
 </head>
 <body>
-  <section class="header">
-    <nav class="nav">
-      <a href="index.html" class=""><img src="img/logo.png" alt="logo" class="logo-home"></a>
-        <div class="nav--links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul class="nav--links__items">
-              <li class="nav--links__item active">
-                <a href="index.html" class="menu-nav__link">
-                  HOME
-                </a>
-              </li>
-              <li class="nav--links__item">
-                <a href="index.html" class="menu-nav__link">
-                  ABOUT
-                </a>
-              </li>
-              <li class="nav--links__item">
-                <a href="index.html" class="menu-nav__link">
-                  SERVICES
-                </a>
-              </li>
-              <li class="nav--links__item">
-                <a href="index.html" class="menu-nav__link">
-                  CONTACTS
-                </a>
-              </li>
-            </ul>
-        </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
+  <header>
+    <section class="header">
+        <nav class="nav">
+          <a href="index.html" class=""><img src="img/logo.png" alt="logo" class="logo-home"></a>
+            <div class="nav--links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul class="nav--links__items">
+                  <li class="nav--links__item active">
+                    <a href="index.html" class="menu-nav__link">
+                      HOME
+                    </a>
+                  </li>
+                  <li class="nav--links__item">
+                    <a href="services.html" class="menu-nav__link">
+                      SERVICES
+                    </a>
+                  </li>
+                  <li class="nav--links__item">
+                    <a href="about.html" class="menu-nav__link">
+                      ABOUT US
+                    </a>
+                  </li>
+                  <li class="nav--links__item">
+                    <a href="contacts.html" class="menu-nav__link">
+                      CONTACTS
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+      </section>
+    </header>
 
-    <div class="text-box">
-      <h1 class="home__name">
-        Kitengela's Best Laundry Services
-      </h1>
-      <p class="home__name--exp">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-      </p>
-      <a href="" class="hero-btn">Visit Us Today</a>
-    </div>
-  </section>
-  
+    <main>
+      <section>
+        <div class="text-box">
+          <h1 class="home__name">
+            Kitengela's Best Laundry Services
+          </h1>
+          <p class="home__name--exp">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+          <a href="" class="hero-btn">Visit Us Today</a>
+        </div>
+      </section>
+
+      <section class="services">
+        <h1 class="services__header">
+          Services We Offer
+        </h1>
+        <p class="services__header__exp">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <div class="row">
+          <div class="services-col">
+            <h3 class="services-col__header">Kids</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="services-col">
+            <h3 class="services-col__header">Adults</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="services-col">
+            <h3 class="services-col__header">General</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="products">    
+        <h1 class="products__examples">Our Products</h1>
+        <p class="products__examples-exp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+          <div class="products__examples-exp--col">
+            <img src="/img/2p.jpg" alt="washing" class="products__examples-exp--col__img">
+            <div class="layer">
+              <h3 class="products--title">LAUNDRY BAGS</h3>
+            </div>          
+          </div>
+        </div>
+      </section>
+    </main>
+<script src="js/main.js"></script>
+
+<!----
 <script>
   var navLinks = document.getElementById("navLinks");
 
@@ -67,6 +118,7 @@
   }
 
 </script>
+---->
 
 </body>
 
