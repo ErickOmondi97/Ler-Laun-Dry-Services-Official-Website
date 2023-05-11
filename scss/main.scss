@@ -24,11 +24,14 @@ a {
 main {
   height: 100%;
   width: 100%;
-  
+}
+
+footer {
   .social-icons {
-    color: $primary-color;
-    margin: 0 15px;
+    bottom: 0.5rem;
+    left: 0.5rem;
     cursor: pointer;
+    color: $primary-color;
     
     a {
       padding: 4px;

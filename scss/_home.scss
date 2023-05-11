@@ -28,6 +28,9 @@
     margin: 10px 0 40px;
     font-size: 14px;
     color: $secondary-color;
+    font-weight: map-get($font-weights, regular);
+    line-height: 22px;
+    padding: 10px;
   }
 }
 

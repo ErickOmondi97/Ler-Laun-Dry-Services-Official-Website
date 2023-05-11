@@ -5,10 +5,18 @@
   color: $primary-color;
 
   &--header {
-    margin-bottom: 25px;
+    margin: 0px 25px;
     margin-top: 20px;
     font-weight: map-get($font-weights, medium);
-    font-size: 20px;  
+    font-size: 20px;
+
+    &__exp{
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: map-get($font-weights, regular);
+    line-height: 22px;
+    padding: 10px;
+    }
   }
 
   .copyright {

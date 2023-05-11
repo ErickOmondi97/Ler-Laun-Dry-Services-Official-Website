@@ -4,16 +4,24 @@
   text-align: center;
   padding-top: 50px;
 
-  &__examples-exp--col {
-    flex-basis: 25%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+  &__examples-exp {
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: map-get($font-weights, regular);
+    line-height: 22px;
+    padding: 10px;
 
-    &__img {
-      width: 100%;
-      display: block;
+    &--col {
+      flex-basis: 25%;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;     
+  
+      &__img {
+        width: 100%;
+        display: block;
+      }
     }
   }
 }
