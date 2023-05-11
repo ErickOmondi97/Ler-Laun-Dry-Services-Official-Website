@@ -4,6 +4,9 @@
 @import './respo';
 @import './services';
 @import './products';
+@import './testimonials';
+@import './cta';
+@import './aboutus';
 
 body {
   background: $secondary-color;
@@ -16,4 +19,23 @@ a {
   color: $secondary-color;
   text-decoration: none;
   font-size: 13px;
+}
+
+
+footer {
+  color: set-text-color($primary-color);
+
+  social-icons {
+    color: $primary-color;
+    margin: 0 13px;
+    cursor: pointer;
+    
+    a {
+      padding: 4px;
+      @include transition-ease;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
 }

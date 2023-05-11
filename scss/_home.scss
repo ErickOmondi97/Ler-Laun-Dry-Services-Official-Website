@@ -41,6 +41,7 @@
   background: transparent;
   position: relative;
   cursor: pointer;
+  border-radius: 10px;
 
   &:hover {
     border: 1px solid $primary-color;
