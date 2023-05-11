@@ -2,11 +2,13 @@
   width: 100%;
   text-align: center;
   padding: 30px 0;
+  color: $primary-color;
 
   &--header {
     margin-bottom: 25px;
     margin-top: 20px;
-    font-weight: map-get($font-weights, regular);   
+    font-weight: map-get($font-weights, medium);
+    font-size: 20px;  
   }
 
   .copyright {

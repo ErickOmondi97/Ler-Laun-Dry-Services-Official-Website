@@ -6,7 +6,7 @@
 
   &__header {
     font-size: 36px;
-    font-weight: map-get($font-weights, regular);
+    font-weight: map-get($font-weights, medium);
 
     &__exp {
       color: $primary-color;
