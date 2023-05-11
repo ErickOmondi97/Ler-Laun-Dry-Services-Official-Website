@@ -47,6 +47,7 @@
   background: transparent;
   position: relative;
   cursor: pointer;
+  border-radius: 10px;
 }
 .hero-btn:hover {
   border: 1px solid #2b8cc4;
@@ -126,6 +127,9 @@ nav .fa {
   .row {
     flex-direction: column;
   }
+  .cta__heading {
+    font-size: 24px;
+  }
 }
 .services {
   width: 80%;
@@ -175,7 +179,7 @@ nav .fa {
   padding-top: 50px;
 }
 .products__examples-exp--col {
-  flex-basis: 32%;
+  flex-basis: 25%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
@@ -183,6 +187,99 @@ nav .fa {
 }
 .products__examples-exp--col__img {
   width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.9;
+}
+.layer:hover {
+  background: rgba(0, 200, 226, 0.815);
+}
+.layer .products--title {
+  width: 100%;
+  font-weight: 400;
+  color: #fcfbe8;
+  font-size: 18px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.layer:hover .products--title {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.testimonials-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #2b8cc4;
+  cursor: pointer;
+  display: flex;
+}
+.testimonials-col__1 {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.testimonials-col__1-user {
+  padding: 0;
+}
+.testimonials-col__1-user--heading {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgb(0, 0, 1), rgba(0, 0, 0, 0.7)), url(../img/13.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.cta__heading {
+  color: #fcfbe8;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer--header {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.footer .copyright {
+  font-size: 12px;
+  margin-top: 25px;
+  text-align: center;
+  align-items: center;
 }
 
 body {
@@ -196,4 +293,20 @@ a {
   color: #fcfbe8;
   text-decoration: none;
   font-size: 13px;
+}
+
+footer {
+  color: #000;
+}
+footer social-icons {
+  color: #2b8cc4;
+  margin: 0 13px;
+  cursor: pointer;
+}
+footer social-icons a {
+  padding: 4px;
+  transition: all 0.5s ease-in-out;
+}
+footer social-icons a:hover {
+  color: #fcfbe8;
 }/*# sourceMappingURL=main.css.map */
