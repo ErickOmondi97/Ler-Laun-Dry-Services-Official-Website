@@ -1,14 +1,13 @@
-.footer {
+//For 'Home' Page
+.about__us {
   width: 100%;
   text-align: center;
   padding: 30px 0;
   color: $primary-color;
 
   &--header {
-    margin: 0px 25px;
-    margin-top: 20px;
     font-weight: map-get($font-weights, medium);
-    font-size: 20px;
+    font-size: 18px;
 
     &__exp{
     color: $primary-color;
@@ -18,11 +17,75 @@
     padding: 10px;
     }
   }
+}
 
-  .copyright {
-    font-size: 12px;
-    margin-top: 25px;
+//For 'About Us' Page
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/10.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: $secondary-color;
+  
+  &__title {
+    margin-bottom: 100%;
+    top: 50%;
+    left: 50%;
     text-align: center;
-    align-items:center;
   }
 }
+
+.about-us {
+  &-col {
+    flex-basis: 100%;
+    padding: 30px 10px;    
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    align-items: center;
+  
+
+    &__img {
+      width: 600px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      padding-top: 0;
+      margin-top: 20px;
+      font-weight: map-get($font-weights, medium);
+      font-size: 18px;
+      line-height: 22px;
+    }
+    
+      p {
+      padding: 15px 0 25px;
+      color: $primary-color;
+      font-size: 14px;
+      font-weight: map-get($font-weights, regular);
+      line-height: 22px;
+      padding: 10px;
+      margin-left: -10px;      
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      padding: 12px 34px;
+      border-radius: 10%;
+      
+      &:hover {
+        border: 1px solid $secondary-color;
+        background: $primary-color;
+        color: $secondary-color;
+        @include transition-ease;
+      }
+    }
+  }
+}
+

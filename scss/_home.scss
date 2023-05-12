@@ -7,8 +7,12 @@
   position: relative;
 }
 
-.logo-home {
-  width: 150px;
+.nav {
+  &__logo {
+    &-home {
+      width: 150px;
+    }
+  }
 }
 
 .text-box {
@@ -52,5 +56,17 @@
     @include transition-ease;
   }
 }
+
+/*
+.copyright {
+font-size: 12px;
+text-align: center;
+align-items:center;
+color: $primary-color;
+position: fixed;
+line-height: 22px;
+padding: 10px;
+}
+*/
 
 
