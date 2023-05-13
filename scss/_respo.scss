@@ -13,7 +13,7 @@ nav .fa {
   .nav--links {
     position: absolute;
     background: $primary-color;
-    height: 100vh;
+    height: 200vh;
     width: 200px;
     top: 0;
     right: -200px;
@@ -31,7 +31,14 @@ nav .fa {
   .nav--links__items {
     padding: 30px;
   }
+  /*
+  .about__us {
+    margin-top: 600px;
+  }
+  */
 }
+
+
 
 @media (max-width: 700px) {
   .row{

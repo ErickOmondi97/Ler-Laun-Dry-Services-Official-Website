@@ -1,3 +1,4 @@
+//For 'Home' Page
 .services {
   width: 80%;
   margin: auto;
@@ -49,3 +50,21 @@
     }
   }
 
+//For 'Services' Page
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/10.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: $secondary-color;
+  
+  &__title {
+    margin-bottom: 100%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 62px;
+  }
+}

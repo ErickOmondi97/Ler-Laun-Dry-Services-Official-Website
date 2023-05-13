@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Alata", sans-serif;
@@ -118,7 +117,7 @@ nav .fa {
   .nav--links {
     position: absolute;
     background: #2b8cc4;
-    height: 100vh;
+    height: 200vh;
     width: 200px;
     top: 0;
     right: -200px;
@@ -136,6 +135,11 @@ nav .fa {
   .nav--links__items {
     padding: 30px;
   }
+  /*
+  .about__us {
+    margin-top: 600px;
+  }
+  */
 }
 @media (max-width: 700px) {
   .row {
@@ -191,6 +195,23 @@ nav .fa {
   padding: 10px;
 }
 
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/10.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fcfbe8;
+}
+.sub-header__title {
+  margin-bottom: 100%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-size: 62px;
+}
+
 .products {
   width: 80%;
   margin: auto;
@@ -207,14 +228,14 @@ nav .fa {
   line-height: 22px;
   padding: 10px;
 }
-.products__examples-exp--col {
+.products__examples-exp-col {
   flex-basis: 25%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
-.products__examples-exp--col__img {
+.products__examples-exp-col__img {
   width: 100%;
   display: block;
 }
@@ -300,6 +321,7 @@ nav .fa {
   text-align: center;
   padding: 30px 0;
   color: #2b8cc4;
+  margin-top: 100px;
 }
 .about__us--header {
   font-weight: 600;
@@ -327,19 +349,17 @@ nav .fa {
   top: 50%;
   left: 50%;
   text-align: center;
+  font-size: 62px;
 }
 
 .about-us-col {
   flex-basis: 100%;
-  padding: 30px 10px;
+  padding: 30px 2px;
   width: 80%;
-  margin: auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  align-items: center;
+  margin: 0 50px;
 }
 .about-us-col__img {
-  width: 600px;
+  width: 550px;
   border-radius: 10px;
 }
 .about-us-col h1 {
@@ -365,6 +385,7 @@ nav .fa {
   border: 1px solid #2b8cc4;
   padding: 12px 34px;
   border-radius: 10%;
+  margin-left: 30%;
 }
 .about-us-col a:hover {
   border: 1px solid #fcfbe8;
@@ -380,36 +401,30 @@ body {
   line-height: 1;
 }
 
-a {
-  color: #fcfbe8;
+footer .social-icons a {
+  color: #2b8cc4;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
 }
-
-main {
-  height: 100%;
-  width: 100%;
+footer .social-icons a:hover {
+  color: #d88532;
 }
-
 footer .copyright {
   color: #2b8cc4;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 22px;
   padding: 10px;
   text-align: center;
 }
-footer .social-icons {
+
+.fa {
   color: #2b8cc4;
-  margin: 0 13px;
-  cursor: pointer;
-  padding: 18px 0;
-}
-footer .social-icons a {
-  padding: 4px;
+  padding: 14px;
   transition: all 0.5s ease-in-out;
 }
-footer .social-icons a:hover {
+.fa:hover {
   color: #fcfbe8;
 }
 
@@ -421,5 +436,4 @@ font-size: 12px;
   justify-content: center;
   padding: 10px;
   color: set-text-color($primary-color);
-
-*//*# sourceMappingURL=main.css.map */
+  *//*# sourceMappingURL=main.css.map */

@@ -15,42 +15,43 @@ body {
   line-height: 1;
 }
 
-a {
-  color: $secondary-color;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-main {
-  height: 100%;
-  width: 100%;
-}
-
 footer {
+  
+
+  .social-icons {
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 16px;
+      @include transition-ease;
+      
+      &:hover {
+        color: $tertiary-color;
+      }
+    }
+  }
+
   .copyright {
     color: $primary-color;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: map-get($font-weights, regular);
     line-height: 22px;
     padding: 10px;
     text-align: center;
   }
-  
-  .social-icons {
-  color: $primary-color;
-  margin: 0 13px;
-  cursor: pointer;
-  padding: 18px 0;
+}
 
-    a {
-      padding: 4px;
-      @include transition-ease;
+.fa {
+    color: $primary-color;
+    padding: 14px;
+    @include transition-ease;
       &:hover {
         color: $secondary-color;
-      }
     }
   }
-}
+
+
+
 
 /*
 font-size: 12px;
@@ -60,5 +61,4 @@ font-size: 12px;
   justify-content: center;
   padding: 10px;
   color: set-text-color($primary-color);
-
-*/
+  */
