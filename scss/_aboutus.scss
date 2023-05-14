@@ -58,13 +58,29 @@
 
     h1 {
       padding-top: 0;
-      margin-top: 20px;
       font-weight: map-get($font-weights, medium);
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 36px;
+      line-height: 44px;
     }
     
       p {
+      padding: 15px 0 25px;
+      color: $primary-color;
+      font-size: 14px;
+      font-weight: map-get($font-weights, regular);
+      line-height: 22px;
+      padding: 10px;
+      margin-left: -10px;      
+    }
+
+    h2 {
+      font-weight: map-get($font-weights, medium);
+      line-height: 22px;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+
+    p {
       padding: 15px 0 25px;
       color: $primary-color;
       font-size: 14px;
@@ -82,6 +98,7 @@
       padding: 12px 34px;
       border-radius: 10%;
       margin-left: 30%;
+      margin-top: 20px;
       
       &:hover {
         border: 1px solid $secondary-color;
